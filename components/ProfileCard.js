@@ -1,4 +1,4 @@
-import { StyleSheet, Text, View, Image } from 'react-native';
+import { StyleSheet, Text, View, Image, TouchableOpacity, Alert } from 'react-native';
 
 export default function ProfileCard({ name, role, imageSource }) {
   return (
@@ -9,7 +9,7 @@ export default function ProfileCard({ name, role, imageSource }) {
     </View>
   );
 }
-
+// 
 const styles = StyleSheet.create({
   card: {
     backgroundColor: 'white',
