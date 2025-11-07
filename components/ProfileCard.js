@@ -1,15 +1,20 @@
 import { StyleSheet, Text, View, Image, TouchableOpacity, Alert } from 'react-native';
 
 export default function ProfileCard({ name, role, imageSource }) {
+
+   const handlePress = () => {
+    Alert.alert('Profile Tapped', `You tapped on ${name}'s profile.`);
+  };
+  
   return (
-    <View style={styles.card}>
+    <TouchableOpacity style={styles.card} onPress={handlePress}>
       <Image source={imageSource} style={styles.avatar} />
       <Text style={styles.name}>{name}</Text>
       <Text style={styles.role}>{role}</Text>
-    </View>
+    </TouchableOpacity>
   );
 }
-// 
+
 const styles = StyleSheet.create({
   card: {
     backgroundColor: 'white',
