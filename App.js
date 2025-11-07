@@ -5,19 +5,19 @@ import ProfileCard from './components/ProfileCard';
 
 const profiles = [
   {
-    name: "Rose", 
-    role: "Flower",
-    imageSource: require('./assets/gul.jpg'), 
+    name: "Cahit Arf", 
+    role: "Mathematician & Scientist",
+    imageSource: require('./assets/Cahit_arf.jpg'), 
   },
   {
-    name: "Daisy", 
-    role: "Flower",
-    imageSource: require('./assets/papatya.jpg'),
+    name: "Nazım Hikmet", 
+    role: "Poet & Playwright",
+    imageSource: require('./assets/nazım.webp'),
   },
   {
-    name: "Peony", 
-    role: "Flower",
-    imageSource: require('./assets/sakayik.jpg'),
+    name: "Aziz Sancar", 
+    role: "Biochemist & Nobel Laureate",
+    imageSource: require('./assets/aziz.jpg'),
   },
 ];
 
@@ -49,7 +49,7 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1, 
-    backgroundColor: '#f0f2f5', 
+    backgroundColor: '#c2c2c2ff', 
   },
   innerView: {
     padding: 20, 
